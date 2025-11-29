@@ -15,7 +15,7 @@ export async function POST(req: Request) {
   // 2. 调用 Gemini 模型
   const result = await streamText({
     // 这里使用 gemini-1.5-flash，你也可以改成 gemini-1.5-pro
-    model: google('gemini-1.5-flash'), 
+    model: google('gemini-1.5-pro'), 
     messages,
   });
 
